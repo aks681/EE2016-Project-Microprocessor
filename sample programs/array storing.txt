@@ -1,0 +1,8 @@
+LDI R4 10
+LDI R11 3
+flag:
+ILDI R4 10
+DEC R4
+DEC R11
+BRNZ flag
+END

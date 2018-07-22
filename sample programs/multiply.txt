@@ -1,0 +1,9 @@
+LDI R4 10
+LDI R5 20
+LDI R7 0
+repeat:
+ADD R7 R4 R7
+DEC R5
+BRNZ repeat
+ST R7 R5
+END

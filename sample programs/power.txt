@@ -1,0 +1,17 @@
+LDI R4 2
+LDI R5 5
+DEC R5
+LDI R7 0
+MOV R4 R8
+flag:
+MOV R4 R6
+repeat:
+ADD R7 R8 R7
+DEC R6
+BRNZ repeat
+MOV R7 R8
+LDI R7 0
+DEC R5
+BRNZ flag
+ST R8 R5
+END
